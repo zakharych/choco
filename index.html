@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
     <!--  временное решение -->
-    <title>LoftSchool Level 2</title>
+    <title>Level 2 LoftSchool </title>
 </head>
 
 
@@ -73,7 +74,162 @@
                 </div>
             </div>
         </section>
+        <section class="why-section">
+            <div class="container">
+                <div class="why">
+                    <h2 class="section__title">
+                        почему chocco?
+                    </h2>
+                    <p class="why__caption">
+                        В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с
+                        собой.
+                    </p>
+                </div>
+                <ul class="why__cards">
+                    <li class="why__list">
+                        <div class="why__pic"></div>
+                        <div class="why__about">
+                            <h3 class="why__about-title">Полезно</h3>
+                            <p class="why__about-caption">Натуральность - ключевое качество нашей продукции. Мы
+                                используем только природные ингредиенты.</p>
+                        </div>
+                    </li>
+                    <li class="why__list">
+                        <div class="why__pic"></div>
+                        <div class="why__about">
+                            <h3 class="why__about-title">Вкусно</h3>
+                            <p class="why__about-caption">Нежный, ненавязчивый, изысканный – так клиенты описывают
+                                вкусовые качества наших батончиков.</p>
+                        </div>
+                    </li>
+                    <li class="why__list">
+                        <div class="why__pic"></div>
+                        <div class="why__about">
+                            <h3 class="why__about-title">Питательно</h3>
+                            <p class="why__about-caption">Высокое содержание качественного белка, а также всех
+                                необходимых витаминов и минералов.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="section__title section__title-reviews">
+                    Отзывы
+                </h2>
+                <div class="review">
+                    <div class="review__pic">
+                        <img src="./reviews/photo1.jpg" alt="avatar" class="review__img">
+                    </div>
+                    <div class="review__title">
+                        <h3 class="review__title-header">
+                            Лучший перекус
+                        </h3>
+                        <p class="review__title-body">
+                            Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу
+                            за компьютером
+                            и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда
+                            под рукой. Это приятно
+                            и удобно.
+                        </p>
+                        <p class="review__title-name">Алёна Хмельницкая</p>
+                    </div>
+                </div>
 
+                <ul class="reviews-autors">
+                    <li class="reviews-autors__item">
+                        <img src="./img/author_1.png" alt="author-avatar" class="reviews-autors__item-pic">
+                    </li>
+                    <li class="reviews-autors__item">
+                        <img src="./img/author_2.png" alt="author-avatar" class="reviews-autors__item-pic">
+                    </li>
+                    <li class="reviews-autors__item">
+                        <img src="./img/author_3.png" alt="author-avatar" class="reviews-autors__item-pic">
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <section class="delivery">
+            <div class="container container-delivery">
+                <h2 class="section__title section__title-delivery">
+                    Закажите доставку
+                </h2>
+                <form class="form" action="#" method="post">
+
+                    <div class="form__col">
+                        <div class="form__row">
+                            <div class="form__container form__container--medium">
+                                <label for="name">Имя</label>
+                                <input class="form__input" type="text" name="name" id="name" autocomplete="on" required
+                                    title="Укажите ваше имя">
+                            </div>
+                            <div class="form__container form__container--medium">
+                                <label for="phone">Телефон</label>
+                                <input class="form__input" type="tel" name="phone" id="phone" required
+                                    title="Заполните номер телефона">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__container form__container--large">
+                                <label for="adr">Улица</label>
+                                <input class="form__input" type="text" name="adr" id="adr" required
+                                    title="Заполните адресс доставки">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__container form__container--small">
+                                <label for="house">Дом</label>
+                                <input class="form__input" type="text" name="house" id="house" required
+                                    title="Укажите ваш дом">
+                            </div>
+                            <div class="form__container form__container--small">
+                                <label for="house-2">Корпус</label>
+                                <input class="form__input" type="text" name="house-2" id="house-2"
+                                    title="Укажите ваш корпус">
+                            </div>
+                            <div class="form__container form__container--small">
+                                <label for="appart">Квартира</label>
+                                <input class="form__input" type="text" name="appart" id="appart"  required
+                                    title="Укажите вашу квартиру">
+                            </div>
+                            <div class="form__container form__container--small">
+                                <label for="flor">Этаж</label>
+                                <input class="form__input" type="text" name="flor" id="flor" required title="Укажите этаж">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form__col">
+                        <div class="form__container form__container-text">
+                            <label for="comment">Комментарий</label>
+                            <textarea class="comment__text" name="comment"
+                                placeholder="Комментарий к заказу"></textarea>
+                        </div>
+                        <div class="form__check">
+                           <div class="form__container form__container-check">
+                                <label class="form__check-payment" >
+                                    <input type="radio" name="payment" value="cash">  Потребуется сдача
+                                </label>
+                                <label class="form__check-payment" >
+                                    <input type="radio" name="payment" value="card"> Оплата по карте
+                                </label>
+                           </div>
+                                                    
+
+                            <input class="tag__box" type="checkbox" name="not-call" id="not-call">
+                                    <label class="tag" for="not-call">Не перезванивать</label>
+                        </div>
+                        <div class="form__buttons">
+                            <input class="button button__submit" type="submit" value="заказть">
+                            <input class="button button__reset" type="reset" value="очистить">
+                        </div>
+                    </div>                  
+
+                </form>
+            </div>
+        </section>
     </div>
 </body>
 

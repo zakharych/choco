@@ -1,0 +1,59 @@
+.why-section {
+    margin-bottom: 69px;
+}
+.why {
+    margin: 0 auto; 
+    text-align: center;
+    width: 40%;
+    margin-bottom: 54px;
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    text-align: center;
+    margin: 0 auto;
+}
+.why__caption {
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.why__cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+.why__list {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    text-align: center;
+    align-items: center;
+}
+
+.why__pic {
+    width: 125px;
+    height: 125px;
+    background-color: #f2f5f4;
+    border-radius: 50%;
+    background-image: url(../../icons/1.svg);
+    background-position: center;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.why__about-title {
+    
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.why__about-caption {
+    
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+}

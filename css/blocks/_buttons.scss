@@ -1,0 +1,40 @@
+.button{
+    padding: 19px 34px;
+    border-radius: 100px;
+    background-color: #fff;
+    border: none;
+    color: #365a49;
+    font-size: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    &:hover  {
+        background-color: #0a4d3c;
+        color: #fff;
+    }
+}
+
+.button__submit {
+    background-color: #0a4d3c;
+    color: #fff;
+
+    &:hover  {
+        background-color: #fff;
+        color: #365a49;
+    }
+}
+
+.button__reset {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+    background-color: transparent;
+
+    &:hover  {
+        background-color: transparent;
+        color: #365a49;
+    }
+
+}
