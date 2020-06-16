@@ -123,7 +123,7 @@ label {
 .form__check-box{
     border-radius: 0;
     &::before {
-        content: url("./icons/checkmark.svg");
+        content: url("../../icons/checkmark.svg");
         background: #fff;
         height: 23px;
     }
