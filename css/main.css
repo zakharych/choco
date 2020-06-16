@@ -853,7 +853,7 @@ label {
 }
 
 .form__check-box::before {
-  content: url("../../icons/checkmark.svg");
+  content: url("./icons/checkmark.svg");
   background: #fff;
   height: 23px;
 }
