@@ -585,6 +585,17 @@ template {
   text-align: center;
 }
 
+.why-section {
+  position: relative;
+}
+
+.why-section::after {
+  content: url("../img/rassberry.png");
+  position: absolute;
+  bottom: -55px;
+  left: 0;
+}
+
 .why {
   text-align: center;
   margin-bottom: 54px;
@@ -650,6 +661,24 @@ template {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.2;
+}
+
+.reviews {
+  position: relative;
+}
+
+.reviews::after {
+  content: url("../img/strawberry.png");
+  position: absolute;
+  top: -36px;
+  right: 10px;
+}
+
+.reviews::before {
+  content: url("../img/berrys.png");
+  position: absolute;
+  bottom: -95px;
+  left: 0;
 }
 
 .section__title-reviews {
@@ -726,6 +755,14 @@ template {
 .delivery {
   background: url("../../img/pattern_form.png");
   background-color: #d3ddd9;
+  position: relative;
+}
+
+.delivery::after {
+  content: url("../img/berry_1.png");
+  position: absolute;
+  bottom: 66px;
+  left: 10px;
 }
 
 .section__title-delivery {

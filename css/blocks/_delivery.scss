@@ -1,6 +1,14 @@
 .delivery {
     background: url("../../img/pattern_form.png");
     background-color: #d3ddd9;
+    position: relative;
+
+    &::after {
+        content: url("../img/berry_1.png");
+        position: absolute;
+        bottom: 66px;
+        left: 10px;
+    }
 
 }
 

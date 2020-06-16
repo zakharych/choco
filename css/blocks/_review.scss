@@ -1,5 +1,22 @@
+.reviews {
+    position: relative;
+    &::after {
+        content: url("../img/strawberry.png");
+        position: absolute;
+        top: -36px;
+        right: 10px;
+    }
+    &::before {
+        content: url("../img/berrys.png");
+        position: absolute;
+        bottom: -95px;
+        left: 0;
+    }
+}
+
 .section__title-reviews {
     margin-bottom: 44px;
+    
 }
 .review {
     padding: 51px 45px 34px;

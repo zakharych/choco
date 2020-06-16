@@ -1,4 +1,11 @@
 .why-section {
+    position: relative;
+    &::after {
+        content: url("../img/rassberry.png");
+        position: absolute;
+        bottom: -55px;
+        left: 0;
+    }
 }
 .why {
     text-align: center;
