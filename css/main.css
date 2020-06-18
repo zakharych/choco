@@ -530,9 +530,8 @@ template {
   flex: 1;
 }
 
-.promo {
-  margin-bottom: 260px;
-  margin-top: 210px;
+.info {
+  margin-top: auto;
 }
 
 .hero__img {
@@ -543,6 +542,13 @@ template {
 
 .hero-col {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero-col:last-child {
+  height: auto;
 }
 
 .promo__title {

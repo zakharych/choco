@@ -92,8 +92,11 @@
 }
 
 .promo {
-    margin-bottom: 260px;
-    margin-top: 210px;
+    // margin-bottom: 260px;
+    // margin-top: 210px;
+}
+.info {
+    margin-top: auto;
 }
 .hero__img {
     display: block;
@@ -104,6 +107,12 @@
 
 .hero-col {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &:last-child {
+        height: auto;
+    }
 }
 
 .promo__title {
