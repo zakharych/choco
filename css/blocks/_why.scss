@@ -27,16 +27,28 @@
 }
 .why__item {
     display: flex;
-    margin: 0 3%;
+    margin-right: 6%;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    position: relative;
 
-    &:first-child {
-        margin-left: 0;
-    }
+    
     &:last-child {
         margin-right: 0;
+    }
+
+    &::before {
+        content: url(../img/separator.png);
+        position: absolute;
+        right: 0;
+        transform: translate(100%,-50%);
+        top: 63px;
+    }
+    &:last-child {
+        &::before {
+            content: "";
+        }
     }
 }
 

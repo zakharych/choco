@@ -20,7 +20,7 @@
 }
 .review {
     padding: 51px 45px 34px;
-    background: url("../../img/review__bg.png") right top no-repeat;
+    background: url("../img/review__bg.png") right top no-repeat;
     background-color: #f8faf9;
     display: flex;
     justify-content: flex-start;
@@ -76,7 +76,10 @@
         width: 100%;
         height: 100%;
     }
-    
+    &--active {
+        border-color: #365a49;
+    }
+
     &:hover, :active {
         border-color: #365a49;
     }
