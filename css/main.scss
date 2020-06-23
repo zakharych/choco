@@ -1,5 +1,16 @@
 $contaoinerWidth: 940px;
+$baseFontSize: 18px;
 
+//brekpoints
+
+$tablets: 768px;
+$phone: 480px;
+
+//colors
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+@import "./layout/media";
 @import "./layout/base";
 @import "./layout/normalize";
 @import "./blocks/buttons";

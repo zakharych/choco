@@ -3,21 +3,21 @@
     &::after {
         content: url("../img/rassberry.png");
         position: absolute;
-        bottom: -55px;
+        bottom: rem(-55px);
         left: 0;
     }
 }
 .why {
     text-align: center;
-    margin-bottom: 54px;
+    margin-bottom: rem(54px);
 }
 
 .why__title{
-    margin-bottom: 7px;
+    margin-bottom: rem(7px);
 }
 .why__caption {
     color: #666666;
-    font-size: 18px;
+    font-size: $baseFontSize;
     line-height: 1.2;    
     padding: 0 26%;
 }
@@ -43,7 +43,7 @@
         position: absolute;
         right: 0;
         transform: translate(100%,-50%);
-        top: 63px;
+        top: rem(63px);
     }
     &:last-child {
         &::before {
@@ -53,11 +53,11 @@
 }
 
 .why__pic {
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     background-color: #f2f5f4;
     border-radius: 50%;    
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     position: relative;
 }
 .why__icon {
@@ -65,20 +65,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 70px;
-    width: 70px;
+    height: rem(70px);
+    width: rem(70px);
       
 }
 
 .why__about-title {
     
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: 700;
-    margin-bottom: 18px;
+    margin-bottom: $baseFontSize;
 }
 .why__about-caption {
     
-    font-size: 18px;
+    font-size: $baseFontSize;
     font-weight: 300;
     line-height: 1.2;
 }

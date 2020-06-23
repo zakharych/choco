@@ -3,56 +3,56 @@
     &::after {
         content: url("../img/strawberry.png");
         position: absolute;
-        top: -36px;
-        right: 10px;
+        top: rem(-36px);
+        right: rem(10px);
     }
     &::before {
         content: url("../img/berrys.png");
         position: absolute;
-        bottom: -95px;
+        bottom: rem(-95px);
         left: 0;
     }
 }
 
 .section__title-reviews {
-    margin-bottom: 44px;
+    margin-bottom: rem(44px);
     
 }
 .review {
-    padding: 51px 45px 34px;
+    padding: rem(51px) rem(45px) rem(34px);
     background: url("../img/review__bg.png") right top no-repeat;
     background-color: #f8faf9;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 27px;
+    margin-bottom: rem(27px);
 }
 .review__title {
     width: 60%;
 
 }
 .review__title-header {
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 .review__title-body {
     color: #666666;
-    font-size: 18px;
+    font-size: $baseFontSize;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 
 .review__title-name {
-    font-size: 18px;
+    font-size: $baseFontSize;
     font-weight: 500;
 }
 
 .review__pic {
-    width: 254px;
-    height: 260px;
-    margin-right: 20px;
+    width: rem(254px);
+    height: rem(260px);
+    margin-right: rem(20px);
 
     img {
         display: block;
@@ -66,10 +66,10 @@
     justify-content: center;
 }
 .reviews-autors__item {
-    width: 68px;
-    height: 68px;
-    margin-right: 11px;
-    border: solid 6px transparent;
+    width: rem(68px);
+    height: rem(68px);
+    margin-right: rem(11px);
+    border: solid rem(6px) transparent;
     border-radius: 50%;
     
     img {

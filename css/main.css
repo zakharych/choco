@@ -7,8 +7,25 @@ body, html {
   padding: 0;
   height: 100%;
   width: 100%;
-  font: 400 16px/1.42 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  line-height: 1.42;
   scroll-behavior: smooth;
+}
+
+html {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 ul,
@@ -38,27 +55,27 @@ body {
 
 .wrapper {
   min-height: 100%;
-  min-width: 960px;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
 }
 
 h1 {
-  font: 700 48px/1.2 'Alegreya Sans', sans-serif;
+  font: 700 2.22222rem "Alegreya Sans", sans-serif;
 }
 
 h2 {
-  font: 700 36px/1.2 'Alegreya Sans', sans-serif;
+  font: 700 1.66667rem "Alegreya Sans", sans-serif;
 }
 
 h3 {
-  font: 740 24px/1.2 'Alegreya Sans', sans-serif;
+  font: 740 1.11111rem "Alegreya Sans", sans-serif;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -274,7 +291,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 0.05556rem dotted ButtonText;
 }
 
 /**
@@ -346,7 +363,7 @@ textarea {
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  outline-offset: -2px;
+  outline-offset: -0.11111rem;
   /* 2 */
 }
 
@@ -401,12 +418,12 @@ template {
 }
 
 .button {
-  padding: 16px 31px;
-  border: solid  3px transparent;
-  border-radius: 100px;
+  padding: 0.88889rem 1.72222rem;
+  border: solid 0.16667rem transparent;
+  border-radius: 5.55556rem;
   background-color: #fff;
   color: #365a49;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
   cursor: pointer;
@@ -449,32 +466,50 @@ template {
   background: url("../img/hero__bg.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-color: #86c3d7;
+  background-color: #61c4d9;
   color: #fff;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-position: right bottom 88%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero::before, .hero::after {
+    display: none;
+  }
 }
 
 .hero::before {
   content: url("../img/leaf_3.png");
   position: absolute;
-  bottom: -55px;
+  bottom: -3.05556rem;
   left: 2%;
 }
 
 .hero::after {
   content: url("../img/leaf_and_berry.png");
   position: absolute;
-  bottom: -55px;
+  bottom: -3.05556rem;
   right: 2%;
 }
 
 .container__hero-section {
-  padding: 24px 0 47px;
+  padding: 1.33333rem 0 2.61111rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: url("../img/batons.png") right center/50% auto no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .container__hero-section {
+    background: none;
+  }
 }
 
 .header__menu {
@@ -484,9 +519,9 @@ template {
 }
 
 .logo {
-  width: 53px;
-  height: 39px;
-  margin-right: 44px;
+  width: 2.94444rem;
+  height: 2.16667rem;
+  margin-right: 2.44444rem;
 }
 
 .lodo__img {
@@ -498,11 +533,17 @@ template {
 .menu {
   display: flex;
   justify-content: space-between;
-  margin-right: 44px;
+  margin-right: 2.44444rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__item {
-  margin-right: 27px;
+  margin-right: 1.5rem;
 }
 
 .menu__item:last-child {
@@ -516,17 +557,41 @@ template {
 }
 
 .header__menu .phone__number {
-  font-size: 24px;
+  font-size: 1.33333rem;
+}
+
+@media screen and (max-width: 768px) {
+  .phone.header__phone {
+    display: none;
+  }
 }
 
 .phone__icon {
-  width: 12px;
-  height: 12px;
+  width: 0.66667rem;
+  height: 0.66667rem;
 }
 
 .promo {
   width: 46%;
-  margin-bottom: 46px;
+  margin-bottom: 2.55556rem;
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo::before {
+    content: url(../img/batons__768.png);
+  }
 }
 
 .hero__img {
@@ -537,15 +602,27 @@ template {
 
 .promo__title {
   margin: 0;
-  font-size: 48px;
+  font-size: 2.66667rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .promo__caption {
-  font-size: 21px;
-  margin-bottom: 25px;
+  font-size: 1.16667rem;
+  margin-bottom: 1.38889rem;
   padding-right: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .promo__caption {
+    padding: 0 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    display: none;
+  }
 }
 
 .info__list {
@@ -555,7 +632,7 @@ template {
 .info__item {
   display: flex;
   align-items: center;
-  margin-right: 38px;
+  margin-right: 2.11111rem;
 }
 
 .info__item:last-child {
@@ -563,9 +640,9 @@ template {
 }
 
 .info__icon {
-  width: 45px;
-  height: 45px;
-  margin-right: 7px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.38889rem;
 }
 
 .info__img {
@@ -575,19 +652,19 @@ template {
 }
 
 .info__title {
-  width: 85px;
+  width: 4.72222rem;
 }
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.11111rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 2.66667rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 58x;
@@ -601,17 +678,17 @@ template {
 .why-section::after {
   content: url("../img/rassberry.png");
   position: absolute;
-  bottom: -55px;
+  bottom: -3.05556rem;
   left: 0;
 }
 
 .why {
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 3rem;
 }
 
 .why__title {
-  margin-bottom: 7px;
+  margin-bottom: 0.38889rem;
 }
 
 .why__caption {
@@ -644,7 +721,7 @@ template {
   position: absolute;
   right: 0;
   transform: translate(100%, -50%);
-  top: 63px;
+  top: 3.5rem;
 }
 
 .why__item:last-child::before {
@@ -652,11 +729,11 @@ template {
 }
 
 .why__pic {
-  width: 126px;
-  height: 126px;
+  width: 7rem;
+  height: 7rem;
   background-color: #f2f5f4;
   border-radius: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 1.66667rem;
   position: relative;
 }
 
@@ -665,12 +742,12 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70px;
-  width: 70px;
+  height: 3.88889rem;
+  width: 3.88889rem;
 }
 
 .why__about-title {
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -688,29 +765,29 @@ template {
 .reviews::after {
   content: url("../img/strawberry.png");
   position: absolute;
-  top: -36px;
-  right: 10px;
+  top: -2rem;
+  right: 0.55556rem;
 }
 
 .reviews::before {
   content: url("../img/berrys.png");
   position: absolute;
-  bottom: -95px;
+  bottom: -5.27778rem;
   left: 0;
 }
 
 .section__title-reviews {
-  margin-bottom: 44px;
+  margin-bottom: 2.44444rem;
 }
 
 .review {
-  padding: 51px 45px 34px;
+  padding: 2.83333rem 2.5rem 1.88889rem;
   background: url("../img/review__bg.png") right top no-repeat;
   background-color: #f8faf9;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 27px;
+  margin-bottom: 1.5rem;
 }
 
 .review__title {
@@ -718,16 +795,16 @@ template {
 }
 
 .review__title-header {
-  font-size: 30px;
+  font-size: 1.66667rem;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 1.38889rem;
 }
 
 .review__title-body {
   color: #666666;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 1.66667rem;
 }
 
 .review__title-name {
@@ -736,9 +813,9 @@ template {
 }
 
 .review__pic {
-  width: 254px;
-  height: 260px;
-  margin-right: 20px;
+  width: 14.11111rem;
+  height: 14.44444rem;
+  margin-right: 1.11111rem;
 }
 
 .review__pic img {
@@ -754,10 +831,10 @@ template {
 }
 
 .reviews-autors__item {
-  width: 68px;
-  height: 68px;
-  margin-right: 11px;
-  border: solid 6px transparent;
+  width: 3.77778rem;
+  height: 3.77778rem;
+  margin-right: 0.61111rem;
+  border: solid 0.33333rem transparent;
   border-radius: 50%;
 }
 
@@ -783,13 +860,13 @@ template {
 .delivery::after {
   content: url("../img/berry_1.png");
   position: absolute;
-  bottom: 66px;
-  left: 10px;
+  bottom: 3.66667rem;
+  left: 0.55556rem;
 }
 
 .section__title-delivery {
-  padding-top: 75px;
-  margin-bottom: 42px;
+  padding-top: 4.16667rem;
+  margin-bottom: 2.33333rem;
 }
 
 .form {
@@ -811,7 +888,7 @@ template {
 .form__row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 17px;
+  margin-bottom: 0.94444rem;
 }
 
 .form__row:last-child {
@@ -820,7 +897,7 @@ template {
 
 .form__container {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.11111rem;
 }
 
 .form__container:last-child {
@@ -829,9 +906,9 @@ template {
 
 .form__input {
   width: 100%;
-  height: 59px;
+  height: 3.27778rem;
   font-size: 18px;
-  border: solid 3px transparent;
+  border: solid 0.16667rem transparent;
   outline: none;
 }
 
@@ -846,7 +923,7 @@ label {
 
 .form__container-text {
   margin-right: 0;
-  margin-bottom: 21px;
+  margin-bottom: 1.16667rem;
 }
 
 .form__container-check {
@@ -858,8 +935,8 @@ label {
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 22px;
-  margin-bottom: 10px;
+  margin-right: 1.22222rem;
+  margin-bottom: 0.55556rem;
 }
 
 .form__check-payment:last-child {
@@ -867,13 +944,13 @@ label {
 }
 
 .comment__text {
-  min-height: 180px;
+  min-height: 10rem;
   resize: none;
-  padding: 5px;
+  padding: 0.27778rem;
 }
 
 .form__check {
-  margin-bottom: 26px;
+  margin-bottom: 1.44444rem;
 }
 
 .radio {
@@ -885,19 +962,19 @@ label {
 }
 
 .form__check-radio {
-  width: 26px;
-  height: 26px;
+  width: 1.44444rem;
+  height: 1.44444rem;
   position: relative;
   border-radius: 50%;
   background: #fff;
-  margin-right: 10px;
+  margin-right: 0.55556rem;
 }
 
 .form__check-radio::before {
   content: "";
   display: none;
-  width: 14px;
-  height: 14px;
+  width: 0.77778rem;
+  height: 0.77778rem;
   background: #365a49;
   border-radius: 50%;
   position: absolute;
@@ -913,6 +990,6 @@ label {
 .form__check-box::before {
   content: url("../icons/checkmark.svg");
   background: #fff;
-  height: 23px;
+  height: 1.27778rem;
 }
 /*# sourceMappingURL=main.css.map */

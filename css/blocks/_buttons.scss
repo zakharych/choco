@@ -1,10 +1,10 @@
 .button{
-    padding: 16px 31px;
-    border: solid  3px transparent;    
-    border-radius: 100px;
+    padding: rem(16px) rem(31px);
+    border: solid  rem(3px) transparent;    
+    border-radius: rem(100px);
     background-color: #fff;
     color: #365a49;
-    font-size: 19px;
+    font-size: $baseFontSize;
     font-weight: 800;
     text-transform: uppercase;
     cursor: pointer;
@@ -32,7 +32,7 @@
 
 .button__reset {
     color: #000000;
-    font-size: 18px;
+    font-size: $baseFontSize;
     font-weight: 400;
     text-transform: none;
     background-color: transparent;
