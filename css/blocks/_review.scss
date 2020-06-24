@@ -85,11 +85,13 @@
 .review__pic {
     width: rem(254px);
     height: rem(260px);
+    margin-right: rem(18px);
 
     @include tablets {
         width: rem(130px);
         height: rem(132px);
         margin-bottom: rem(36px);
+        margin-right: 0;
     }
     @include phone {
         margin-bottom: rem(19px);

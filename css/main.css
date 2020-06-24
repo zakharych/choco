@@ -963,6 +963,7 @@ template {
 .review__pic {
   width: 14.11111rem;
   height: 14.44444rem;
+  margin-right: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -970,6 +971,7 @@ template {
     width: 7.22222rem;
     height: 7.33333rem;
     margin-bottom: 2rem;
+    margin-right: 0;
   }
 }
 
