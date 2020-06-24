@@ -151,7 +151,11 @@
     }
     &::before {
         @include tablets {
-            content: url(../img/batons__768.png);
+            content:"";
+            display: block;
+            width:  rem(316px);
+            height: rem(330px);
+            background: url(../img/batons__768.png) center center / contain no-repeat ;
             margin-bottom: rem(10px);
         }
     }
@@ -172,6 +176,11 @@
     font-size: rem(48px);
     font-weight: 700;
     text-transform: uppercase;
+
+    @include phone {
+        line-height: 0.8;
+        margin-bottom: rem(10px);
+    }
 }
 
 .promo__caption {
@@ -181,6 +190,10 @@
 
     @include tablets {
         padding: 0 25%;
+    }
+    @include phone {
+        padding: 0 15%;
+        margin-bottom: rem(14px);
     }
 }
 

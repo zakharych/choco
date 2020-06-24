@@ -620,7 +620,11 @@ template {
 
 @media screen and (max-width: 768px) {
   .promo::before {
-    content: url(../img/batons__768.png);
+    content: "";
+    display: block;
+    width: 17.55556rem;
+    height: 18.33333rem;
+    background: url(../img/batons__768.png) center center/contain no-repeat;
     margin-bottom: 0.55556rem;
   }
 }
@@ -638,6 +642,13 @@ template {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 480px) {
+  .promo__title {
+    line-height: 0.8;
+    margin-bottom: 0.55556rem;
+  }
+}
+
 .promo__caption {
   font-size: 1.16667rem;
   margin-bottom: 1.38889rem;
@@ -647,6 +658,13 @@ template {
 @media screen and (max-width: 768px) {
   .promo__caption {
     padding: 0 25%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .promo__caption {
+    padding: 0 15%;
+    margin-bottom: 0.77778rem;
   }
 }
 
@@ -713,9 +731,21 @@ template {
   left: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .why-section::after {
+    content: "";
+  }
+}
+
 .why {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+  .why {
+    margin-bottom: 3.38889rem;
+  }
 }
 
 .why__title {
@@ -729,9 +759,21 @@ template {
   padding: 0 26%;
 }
 
+@media screen and (max-width: 480px) {
+  .why__caption {
+    padding: 0 2%;
+  }
+}
+
 .why__cards {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .why__cards {
+    flex-direction: column;
+  }
 }
 
 .why__item {
@@ -741,6 +783,18 @@ template {
   text-align: center;
   align-items: center;
   position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .why__item {
+    flex-direction: row;
+    margin-right: 0;
+    text-align: left;
+    margin-bottom: 3.27778rem;
+  }
+  .why__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .why__item:last-child {
@@ -755,6 +809,12 @@ template {
   top: 3.5rem;
 }
 
+@media screen and (max-width: 480px) {
+  .why__item::before {
+    content: "";
+  }
+}
+
 .why__item:last-child::before {
   content: "";
 }
@@ -766,6 +826,14 @@ template {
   border-radius: 50%;
   margin-bottom: 1.66667rem;
   position: relative;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .why__pic {
+    margin-right: 0.77778rem;
+    margin-bottom: 0;
+  }
 }
 
 .why__icon {
@@ -773,14 +841,20 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 3.88889rem;
-  width: 3.88889rem;
+  height: 4.44444rem;
+  width: 4.44444rem;
 }
 
 .why__about-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .why__about-title {
+    margin-bottom: 0.72222rem;
+  }
 }
 
 .why__about-caption {
@@ -798,6 +872,13 @@ template {
   position: absolute;
   top: -2rem;
   right: 0.55556rem;
+}
+
+@media screen and (max-width: 480px) {
+  .reviews::after {
+    top: 0.44444rem;
+    right: -2.66667rem;
+  }
 }
 
 .reviews::before {
@@ -821,8 +902,23 @@ template {
   margin-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .review {
+    flex-direction: column;
+    padding: 2.83333rem 0.94444rem 1.88889rem;
+    margin-bottom: 0.88889rem;
+  }
+}
+
 .review__title {
   width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .review__title {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .review__title-header {
@@ -831,11 +927,32 @@ template {
   margin-bottom: 1.38889rem;
 }
 
+@media screen and (max-width: 768px) {
+  .review__title-header {
+    width: 100%;
+    margin-bottom: 0.72222rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review__title-header {
+    margin-bottom: 0.77778rem;
+    padding: 0 2.88889rem;
+  }
+}
+
 .review__title-body {
   color: #666666;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 1.66667rem;
+}
+
+@media screen and (max-width: 768px) {
+  .review__title-body {
+    line-height: 1.2;
+    margin-bottom: 0.88889rem;
+  }
 }
 
 .review__title-name {
@@ -846,7 +963,20 @@ template {
 .review__pic {
   width: 14.11111rem;
   height: 14.44444rem;
-  margin-right: 1.11111rem;
+}
+
+@media screen and (max-width: 768px) {
+  .review__pic {
+    width: 7.22222rem;
+    height: 7.33333rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review__pic {
+    margin-bottom: 1.05556rem;
+  }
 }
 
 .review__pic img {
@@ -867,6 +997,18 @@ template {
   margin-right: 0.61111rem;
   border: solid 0.33333rem transparent;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-autors__item {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.94444rem;
+  }
+}
+
+.reviews-autors__item:last-child {
+  margin-right: 0;
 }
 
 .reviews-autors__item img {
@@ -900,8 +1042,28 @@ template {
   margin-bottom: 2.33333rem;
 }
 
+@media screen and (max-width: 768px) {
+  .section__title-delivery {
+    flex-direction: column;
+    margin-bottom: 1.61111rem;
+  }
+}
+
 .form {
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    padding: 0 18%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0;
+  }
 }
 
 .form__col {
@@ -912,8 +1074,20 @@ template {
   margin-right: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  .form__col {
+    width: 100%;
+  }
+}
+
 .form__col:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .form__col:last-child {
+    padding-top: 0.94444rem;
+  }
 }
 
 .form__row {
@@ -943,6 +1117,12 @@ template {
   outline: none;
 }
 
+@media screen and (max-width: 768px) {
+  .form__input {
+    height: 1.94444rem;
+  }
+}
+
 .form__input:focus {
   border-color: #dee2bd;
 }
@@ -960,6 +1140,12 @@ label {
 .form__container-check {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+  .form__container-check {
+    justify-content: center;
+  }
 }
 
 .form__check-payment {
@@ -980,8 +1166,20 @@ label {
   padding: 0.27778rem;
 }
 
+@media screen and (max-width: 768px) {
+  .comment__text {
+    min-height: 4.61111rem;
+  }
+}
+
 .form__check {
   margin-bottom: 1.44444rem;
+}
+
+@media screen and (max-width: 480px) {
+  .form__check {
+    margin-bottom: 2.33333rem;
+  }
 }
 
 .radio {
@@ -1022,5 +1220,12 @@ label {
   content: url("../icons/checkmark.svg");
   background: #fff;
   height: 1.27778rem;
+}
+
+@media screen and (max-width: 768px) {
+  .form__buttons {
+    display: flex;
+    justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

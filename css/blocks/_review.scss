@@ -5,6 +5,11 @@
         position: absolute;
         top: rem(-36px);
         right: rem(10px);
+
+        @include phone {
+            top: rem(8px);
+            right: rem(-48px);
+        }
     }
     &::before {
         content: url("../img/berrys.png");
@@ -26,15 +31,38 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: rem(27px);
+
+    @include tablets {
+        flex-direction: column;
+        padding: rem(51px) rem(17px) rem(34px);
+        margin-bottom: rem(16px);
+    }
+
+
 }
 .review__title {
     width: 60%;
+
+    @include tablets {
+        width: 100%;
+        text-align: center;
+    }
+
 
 }
 .review__title-header {
     font-size: rem(30px);
     font-weight: 700;
     margin-bottom: rem(25px);
+
+    @include tablets {
+        width: 100%;
+        margin-bottom: rem(13px);
+    }
+    @include phone {
+        margin-bottom: rem(14px);
+        padding: 0 rem(52px);
+    }
 }
 
 .review__title-body {
@@ -42,6 +70,11 @@
     font-size: $baseFontSize;
     font-weight: 400;
     margin-bottom: rem(30px);
+
+     @include tablets {
+        line-height: 1.2;
+        margin-bottom: rem(16px);
+    }
 }
 
 .review__title-name {
@@ -52,7 +85,15 @@
 .review__pic {
     width: rem(254px);
     height: rem(260px);
-    margin-right: rem(20px);
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(132px);
+        margin-bottom: rem(36px);
+    }
+    @include phone {
+        margin-bottom: rem(19px);
+    }
 
     img {
         display: block;
@@ -71,6 +112,15 @@
     margin-right: rem(11px);
     border: solid rem(6px) transparent;
     border-radius: 50%;
+
+    @include tablets {
+        width: rem(72px);
+        height: rem(72px);
+        margin-right: rem(17px);
+    }
+    &:last-child {
+        margin-right: 0;
+    }
     
     img {
         width: 100%;

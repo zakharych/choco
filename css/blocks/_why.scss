@@ -5,11 +5,19 @@
         position: absolute;
         bottom: rem(-55px);
         left: 0;
+
+        @include phone {
+            content: "";
+        }
     }
 }
 .why {
     text-align: center;
     margin-bottom: rem(54px);
+
+        @include phone {
+            margin-bottom: rem(61px);
+        }
 }
 
 .why__title{
@@ -20,10 +28,16 @@
     font-size: $baseFontSize;
     line-height: 1.2;    
     padding: 0 26%;
+    @include phone {
+        padding: 0 2%;
+    }
 }
 .why__cards {
     display: flex;
     justify-content: space-between;
+    @include phone {
+        flex-direction: column;
+    }
 }
 .why__item {
     display: flex;
@@ -32,6 +46,17 @@
     text-align: center;
     align-items: center;
     position: relative;
+
+    @include phone {
+        flex-direction: row;
+        margin-right: 0;
+        text-align: left;
+        margin-bottom: rem(59px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 
     
     &:last-child {
@@ -44,6 +69,10 @@
         right: 0;
         transform: translate(100%,-50%);
         top: rem(63px);
+
+        @include phone {
+            content: "";
+        }
     }
     &:last-child {
         &::before {
@@ -59,14 +88,20 @@
     border-radius: 50%;    
     margin-bottom: rem(30px);
     position: relative;
+    flex-shrink: 0;
+
+    @include phone {
+        margin-right: rem(14px);
+        margin-bottom: 0;
+    }
 }
 .why__icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: rem(70px);
-    width: rem(70px);
+    height: rem(80px);
+    width: rem(80px);
       
 }
 
@@ -75,6 +110,10 @@
     font-size: rem(27px);
     font-weight: 700;
     margin-bottom: $baseFontSize;
+
+    @include phone {
+        margin-bottom: rem(13px);
+    }
 }
 .why__about-caption {
     
