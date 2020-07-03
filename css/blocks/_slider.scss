@@ -1,47 +1,131 @@
-
 .slider-section {
-    
+
     background-color: #f8faf9;
+
+    position: relative;
+
+    &::after {
+        content: url("../img/slider__after-bg.png");
+        position: absolute;
+        bottom: -12rem;
+        right: 0;
+
+        @include phone {
+            content: "";
+        }
+    }
+
+    
 }
+
 .slider {
     display: flex;
     align-items: center;
+    max-width: 990px;
+
+    @include tablets {
+        max-width: 500px;
+    }
+}
+.slider__arrow {
+    @include tablets {
+        margin-top: -50%;
+    }
 }
 .slider__content {
     display: flex;
+    align-items: center;
+    padding: 0 rem(60px);
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0;
+    }
 }
+
 .slider__img {
     width: 50%;
+
+    @include tablets {
+        width: auto;
+        transform: scale(0.8);
+    }
 }
+
 .slider__body {
     width: 50%;
+    padding-left: rem(65px);
+
+    @include tablets {
+        width: auto;
+        padding: 0;
+    }
 }
+
 .slider__compos {
     margin-bottom: rem(21px);
+
+    @include tablets {
+        display: none;
+    }
+
 }
+
 .slider__title {
-    font-size: 36px;
-font-weight: 700;
-text-transform: uppercase;
-margin-bottom: rem(9px);
+    font-size: rem(36px);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: rem(9px);
+
+    @include tablets {
+        font-size: rem(30px);
+    }
+}
+
+.slider__desc {
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .slider__desc-text {
     line-height: 1.3;
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
+
+    @include tablets {
+        text-align: center;
+        margin-bottom: 0.8rem;
+    }
 }
+
 .slider__info {
     display: flex;
+    margin-bottom: rem(27px);
 }
 
 .slider__info-block {
     display: flex;
-    flex: 1;
     flex-direction: column;
+    margin-right: rem(50px);
 
-    p { &:last-child {
-        font-weight: 700;
+    p {
+        &:last-child {
+            font-weight: 700;
+        }
     }
 }
+
+.slider__buy {
+    display: flex;
+    align-items: center;
+    line-height: 1;
 }
 
+.slider__priсe {
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-right: rem(27px);
+}
