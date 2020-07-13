@@ -13,7 +13,7 @@ $('.form').submit(e => {
 
     $.ajax({
         url: "https://webdev-api.loftschool.com/sendmail",
-        metod: "post",
+        method: "POST",
         data: {
             name: name.val(),
             phone: phone.val(),
