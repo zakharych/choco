@@ -1021,14 +1021,30 @@ template {
   margin-bottom: 2.44444rem;
 }
 
-.review {
+.review__list {
   padding: 2.83333rem 2.5rem 1.88889rem;
   background: url("../img/review__bg.png") right top no-repeat;
   background-color: #f8faf9;
+  min-height: 370px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.review {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 1.5rem;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.review.active {
+  opacity: 1;
+  position: static;
 }
 
 @media screen and (max-width: 768px) {
@@ -1147,7 +1163,7 @@ template {
   height: 100%;
 }
 
-.reviews-autors__item--active {
+.reviews-autors__item.active {
   border-color: #365a49;
 }
 
