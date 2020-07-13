@@ -18,9 +18,14 @@
     
 }
 
-.slider {
+.slider-section-container {
     display: flex;
     align-items: center;
+    .bx-wrapper {
+        background-color: transparent;
+        box-shadow: none;
+        border: 0;
+    }
     max-width: 990px;
 
     @include tablets {

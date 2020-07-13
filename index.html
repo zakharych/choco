@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap"
         rel="stylesheet">
@@ -38,7 +40,7 @@
                                 <a href="#" class="menu__link">Отзывы</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Как мыработаем</a>
+                                <a href="#" class="menu__link">Как мы работаем</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link">Контакты</a>
@@ -131,43 +133,169 @@
             </div>
         </section>
         <section class="section slider-section">
-            <div class="container slider">
+            <div class="container slider-section-container">
 
-                <a href="" class="slider__arrow">
+                <a href="#" class="arrow arrow-left">
                     <img src="./img/arrow__left.png" alt="">
                 </a>
-                <div class="slider__content">
-                    <div class="slider__img">
-                        <img class="slider__pic" src="./img/slider__batons.png" alt="batons">
-                    </div>
-                    <div class="slider__body">
-                        <a href="#" class="slider__compos">
-                            <img src="./img/comp.png" class="slider__dropdown-link"></img>
-                        </a>
-                        <h3 class="slider__title">Батончик “Гранола виноград”</h3>
-                        <div class="slider__desc">
-                            <p class="slider__desc-text">
-                                Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят:
-                                сухое молоко, заменитель сахара и какао бобы.
-                            </p>
-                            <div class="slider__info">
-                                <div class="slider__info-block">
-                                    <p>Калорийность</p>
-                                    <p>120 ккал</p>
+                <ul class="slider">
+                    <li class="slider__content">
+                        <div class="slider__img">
+                            <img class="slider__pic" src="./img/slider__batons.png" alt="batons">
+                        </div>
+                        <div class="slider__body">
+                            <a href="#" class="slider__compos">
+                                <img src="./img/comp.png" class="slider__dropdown-link"></img>
+                            </a>
+                            <h3 class="slider__title">Батончик “Гранола виноград”</h3>
+                            <div class="slider__desc">
+                                <p class="slider__desc-text">
+                                    Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят:
+                                    сухое молоко, заменитель сахара и какао бобы.
+                                </p>
+                                <div class="slider__info">
+                                    <div class="slider__info-block">
+                                        <p>Калорийность</p>
+                                        <p>120 ккал</p>
+                                    </div>
+                                    <div class="slider__info-block">
+                                        <p>Вес</p>
+                                        <p>98 грамм</p>
+                                    </div>
                                 </div>
-                                <div class="slider__info-block">
-                                    <p>Вес</p>
-                                    <p>98 грамм</p>
+                                <div class="slider__buy">
+                                    <p class="slider__priсe">140 P</p>
+                                    <button class="button button__dark">Заказать</button>
                                 </div>
-                            </div>
-                            <div class="slider__buy">
-                                <p class="slider__priсe">140 P</p>
-                                <button class="button button__dark">Заказать</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <a href="" class="slider__arrow">
+                    </li>
+                    <li class="slider__content">
+                        <div class="slider__img">
+                            <img class="slider__pic" src="./img/slider__batons.png" alt="batons">
+                        </div>
+                        <div class="slider__body">
+                            <a href="#" class="slider__compos">
+                                <img src="./img/comp.png" class="slider__dropdown-link"></img>
+                            </a>
+                            <h3 class="slider__title">Батончик “Гранола виноград”</h3>
+                            <div class="slider__desc">
+                                <p class="slider__desc-text">
+                                    Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят:
+                                    сухое молоко, заменитель сахара и какао бобы.
+                                </p>
+                                <div class="slider__info">
+                                    <div class="slider__info-block">
+                                        <p>Калорийность</p>
+                                        <p>120 ккал</p>
+                                    </div>
+                                    <div class="slider__info-block">
+                                        <p>Вес</p>
+                                        <p>98 грамм</p>
+                                    </div>
+                                </div>
+                                <div class="slider__buy">
+                                    <p class="slider__priсe">140 P</p>
+                                    <button class="button button__dark">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider__content">
+                        <div class="slider__img">
+                            <img class="slider__pic" src="./img/slider__batons.png" alt="batons">
+                        </div>
+                        <div class="slider__body">
+                            <a href="#" class="slider__compos">
+                                <img src="./img/comp.png" class="slider__dropdown-link"></img>
+                            </a>
+                            <h3 class="slider__title">Батончик “Гранола виноград”</h3>
+                            <div class="slider__desc">
+                                <p class="slider__desc-text">
+                                    Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят:
+                                    сухое молоко, заменитель сахара и какао бобы.
+                                </p>
+                                <div class="slider__info">
+                                    <div class="slider__info-block">
+                                        <p>Калорийность</p>
+                                        <p>120 ккал</p>
+                                    </div>
+                                    <div class="slider__info-block">
+                                        <p>Вес</p>
+                                        <p>98 грамм</p>
+                                    </div>
+                                </div>
+                                <div class="slider__buy">
+                                    <p class="slider__priсe">140 P</p>
+                                    <button class="button button__dark">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider__content">
+                        <div class="slider__img">
+                            <img class="slider__pic" src="./img/slider__batons.png" alt="batons">
+                        </div>
+                        <div class="slider__body">
+                            <a href="#" class="slider__compos">
+                                <img src="./img/comp.png" class="slider__dropdown-link"></img>
+                            </a>
+                            <h3 class="slider__title">Батончик “Гранола виноград”</h3>
+                            <div class="slider__desc">
+                                <p class="slider__desc-text">
+                                    Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят:
+                                    сухое молоко, заменитель сахара и какао бобы.
+                                </p>
+                                <div class="slider__info">
+                                    <div class="slider__info-block">
+                                        <p>Калорийность</p>
+                                        <p>120 ккал</p>
+                                    </div>
+                                    <div class="slider__info-block">
+                                        <p>Вес</p>
+                                        <p>98 грамм</p>
+                                    </div>
+                                </div>
+                                <div class="slider__buy">
+                                    <p class="slider__priсe">140 P</p>
+                                    <button class="button button__dark">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider__content">
+                        <div class="slider__img">
+                            <img class="slider__pic" src="./img/slider__batons.png" alt="batons">
+                        </div>
+                        <div class="slider__body">
+                            <a href="#" class="slider__compos">
+                                <img src="./img/comp.png" class="slider__dropdown-link"></img>
+                            </a>
+                            <h3 class="slider__title">Батончик “Гранола виноград”</h3>
+                            <div class="slider__desc">
+                                <p class="slider__desc-text">
+                                    Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят:
+                                    сухое молоко, заменитель сахара и какао бобы.
+                                </p>
+                                <div class="slider__info">
+                                    <div class="slider__info-block">
+                                        <p>Калорийность</p>
+                                        <p>120 ккал</p>
+                                    </div>
+                                    <div class="slider__info-block">
+                                        <p>Вес</p>
+                                        <p>98 грамм</p>
+                                    </div>
+                                </div>
+                                <div class="slider__buy">
+                                    <p class="slider__priсe">140 P</p>
+                                    <button class="button button__dark">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="arrow arrow-right">
                     <img class="" src="./img/arrow__right.png" alt="arrow_right">
                 </a>
             </div>
@@ -256,6 +384,7 @@
                 <form class="form" action="#" method="post">
 
                     <div class="form__col">
+                        <input type="hidden" name="to" value="alexzlkl@yandex.ru">
                         <div class="form__row">
                             <div class="form__container form__container--medium">
                                 <label for="name">Имя</label>
@@ -302,7 +431,7 @@
                     <div class="form__col">
                         <div class="form__container form__container-text">
                             <label for="comment">Комментарий</label>
-                            <textarea class="comment__text form__input name=" comment"
+                            <textarea class="comment__text form__input" name="comment"
                                 placeholder="Комментарий к заказу"></textarea>
                         </div>
                         <div class="form__check">
@@ -362,12 +491,27 @@
 
         </ul>
     </div>
+    <div class="modal" id="modal">
+        <div class="modal__containder">
+            <div class="modal__content">
+                Заявка отправлена
+            </div>
+            <div class="modal__button-contaoner">
+                <button href="#" class="button js-submit-button button__submit">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/main.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="./js/review.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
