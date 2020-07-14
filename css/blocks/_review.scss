@@ -25,7 +25,8 @@
 }
 .review__list {
     padding: rem(51px) rem(45px) rem(34px);
-    background: url("../img/review__bg.png") right top no-repeat;
+    background: url("../img/review__bg-right.png") right top no-repeat,
+        url("../img/review__bg-center.png") center top no-repeat;
     background-color: #f8faf9;
     min-height: 370px;
     margin-bottom: rem(27px);
