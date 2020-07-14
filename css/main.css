@@ -1465,4 +1465,12 @@ label {
   flex-direction: column;
   align-items: center;
 }
+
+.error__modal {
+  color: red;
+}
+
+.modal__content {
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=main.css.map */
