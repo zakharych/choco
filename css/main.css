@@ -488,19 +488,24 @@ template {
   justify-content: space-between;
 }
 
-.menu__item {
-  border: solid 1px #000;
+.fix-menu__item {
+  border: solid 1px transparent;
+  border-radius: 50%;
+  margin-bottom: 0.27778rem;
+}
+
+.fix-menu__item.active {
+  border: solid 1px #fff;
 }
 
 .fix-menu__link {
   display: block;
   height: 0.33333rem;
   width: 0.33333rem;
-  margin-bottom: 0.88889rem;
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 2px 2px 2px #00000050;
-  margin: 22px;
+  margin: 4px;
 }
 
 .hero {

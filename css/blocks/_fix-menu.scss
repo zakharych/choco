@@ -10,19 +10,26 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.menu__item {
+.fix-menu__item {
 
 
-    border: solid 1px #000;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    margin-bottom: rem(5px);
+
+
+&.active{
+    border: solid 1px #fff;
+}
+
 }
 
 .fix-menu__link {
     display: block;
     height: rem(6px);
     width: rem(6px);
-    margin-bottom: rem(16px);
     background-color: #fff;
     border-radius: 50%;    
     box-shadow: 2px 2px 2px #00000050;
-    margin: 22px;
+    margin: 4px;
 }
