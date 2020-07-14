@@ -703,6 +703,7 @@ template {
   text-transform: uppercase;
   margin-bottom: 58x;
   text-align: center;
+  margin-bottom: 2.33333rem;
 }
 
 .slider-section {
@@ -1192,7 +1193,6 @@ template {
 
 .section__title-delivery {
   padding-top: 4.16667rem;
-  margin-bottom: 2.33333rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1472,5 +1472,119 @@ label {
 
 .modal__content {
   margin-bottom: 10px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .team--version--desctop {
+    display: none;
+  }
+}
+
+.team--version--mobile {
+  display: none;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .team--version--mobile {
+    display: flex;
+  }
+}
+
+.team__title {
+  border: none;
+  background-color: transparent;
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.team__title::after {
+  content: "▼";
+  font-size: 0.66667rem;
+  color: #666666;
+  padding-bottom: 2px;
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__member {
+  margin-bottom: 0.66667rem;
+}
+
+.team__title {
+  margin-bottom: 0.33333rem;
+}
+
+.team__content {
+  overflow: hidden;
+  height: 0;
+  text-align: center;
+  padding: 0 0.05556rem;
+  transition: height .3s;
+}
+
+.team__content .team--version--desctop {
+  position: absolute;
+  top: 100%;
+}
+
+.team__content-title {
+  font-size: 1rem;
+  color: #2a2323;
+}
+
+.team__content-subtitle {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .team__content {
+    padding: 0 21%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team__content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__member {
+  width: 220px;
+  height: 288px;
+}
+
+@media screen and (max-width: 768px) {
+  .team__member {
+    width: 142px;
+    height: 184px;
+  }
+}
+
+.team__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */
