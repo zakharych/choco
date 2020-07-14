@@ -56,10 +56,10 @@
     padding: 0 rem(1px);
     transition: height .3s;
 
-    .team--version--desctop {
+    
         position: absolute;
         top: 100%;
-    }
+   
     
 
     &-title {
@@ -75,6 +75,7 @@
 
     @include tablets {
         padding: 0 21%;
+        position: static;
     }
 }
 .team__content-block {

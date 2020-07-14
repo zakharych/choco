@@ -1,0 +1,28 @@
+.fix-menu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-right: rem(18px);
+}
+
+.fix-menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu__item {
+
+
+    border: solid 1px #000;
+}
+
+.fix-menu__link {
+    display: block;
+    height: rem(6px);
+    width: rem(6px);
+    margin-bottom: rem(16px);
+    background-color: #fff;
+    border-radius: 50%;    
+    box-shadow: 2px 2px 2px #00000050;
+    margin: 22px;
+}

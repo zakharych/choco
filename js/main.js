@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('#hamburger');
 const body = document.body;
-const links = document.querySelectorAll('.menu__link');
+const links = document.querySelectorAll('.burger-menu__link');
 const overlayElement = document.querySelector('.overlay');
 
 
