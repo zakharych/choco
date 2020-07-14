@@ -91,6 +91,10 @@
     &:focus {
         border-color: #dee2bd;
     }
+
+    &-error {
+        border: solid rem(3px) palevioletred;
+    }
 }
 
 label {

@@ -1281,6 +1281,10 @@ template {
   border-color: #dee2bd;
 }
 
+.form__input-error {
+  border: solid 0.16667rem palevioletred;
+}
+
 label {
   color: #365a49;
   font-size: 18px;
