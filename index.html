@@ -18,7 +18,7 @@
     <div class="wrapper">
 
         <div class="maincontent">
-            <section data-section-id="hero" class="section hero">
+            <section data-sidemenu-theme="white" data-section-id="hero" class="section hero">
                 <div class="container container__hero-section">
                     <div class="header">
                         <nav class="header__menu">
@@ -85,7 +85,7 @@
     
                 </div>
             </section>
-            <section  data-section-id="why" class="section why-section">
+            <section  data-sidemenu-theme="dark"  data-section-id="why" class="section why-section">
                 <div class="container">
                     <div class="why">
                         <h2 class="section__title why__title">
@@ -134,7 +134,7 @@
                     </ul>
                 </div>
             </section>
-            <section  data-section-id="slider" class="section slider-section">
+            <section  data-sidemenu-theme="dark"  data-section-id="slider" class="section slider-section">
                 <div class="container slider-section-container">
     
                     <a href="#" class="arrow arrow-left">
@@ -302,7 +302,7 @@
                     </a>
                 </div>
             </section>
-            <section  data-section-id="team" class="section team-section">
+            <section  data-sidemenu-theme="dark"  data-section-id="team" class="section team-section">
                 <div class="container">
                     <h2 class="section__title">
                         Команда
@@ -438,7 +438,7 @@
     
                 </div>
             </section>
-            <section  data-section-id="reviews" class="section reviews">
+            <section  data-sidemenu-theme="dark"  data-section-id="reviews" class="section reviews">
                 <div class="section container">
                     <h2 class="section__title section__title-reviews">
                         Отзывы
@@ -514,7 +514,7 @@
     
                 </div>
             </section>
-            <section  data-section-id="delivery" class="section delivery">
+            <section  data-sidemenu-theme="white"  data-section-id="delivery" class="section delivery">
                 <div class="container container-delivery">
                     <h2 class="section__title section__title-delivery">
                         Закажите доставку
@@ -600,7 +600,7 @@
                     </form>
                 </div>
             </section>
-            <section  data-section-id="map" class="section map-section">
+            <section  data-sidemenu-theme="dark"  data-section-id="map" class="section map-section">
                 <div class="map" id="map"></div>
             </section>
 
@@ -608,11 +608,11 @@
     </div>
     <nav class="fix-menu">
         <ul class="fix-menu__list">
-            <li class="fix-menu__item active">
+            <li class="fix-menu__item fix-menu__item--active">
                 <a data-scroll-to="hero" href="" class="fix-menu__link"></a>
             </li>
             <li class="fix-menu__item">
-                <a href="" data-scroll-to="why" class="fix-menu__link"></a>
+                <a data-scroll-to="why" href="" data-scroll-to="why" class="fix-menu__link"></a>
             </li>
             <li class="fix-menu__item">
                 <a href="" class="fix-menu__link"></a>
@@ -684,6 +684,8 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=0ea6af85-1b2c-489f-853e-c54b6b72c270&lang=ru_RU" type="text/javascript">
     </script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
 
     <script src="./js/review.js"></script>
     <script src="./js/slider.js"></script>

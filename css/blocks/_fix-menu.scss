@@ -3,6 +3,10 @@
     right: 0;
     top: 50%;
     margin-right: rem(18px);
+    @include tablets {
+        display: none;
+        opacity: 0;
+    }
 }
 
 .fix-menu__list {
@@ -10,18 +14,28 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.fix-menu-shadowed{
+    .fix-menu__link {background-color: #000}
+    .fix-menu__item {
+        &--active, 
+        &:hover {
+        border: solid 1px #000;
+    }
+}
+
+}
 .fix-menu__item {
-
-
     border: solid 1px transparent;
     border-radius: 50%;
     margin-bottom: rem(5px);
 
-
-&.active{
-    border: solid 1px #fff;
-}
-
+    &--active {
+        border: solid 1px #fff;
+    }
+    &:hover {
+        border: solid 1px #fff;
+    }
 }
 
 .fix-menu__link {
@@ -29,7 +43,6 @@
     height: rem(6px);
     width: rem(6px);
     background-color: #fff;
-    border-radius: 50%;    
-    box-shadow: 2px 2px 2px #00000050;
+    border-radius: 50%;
     margin: 4px;
 }

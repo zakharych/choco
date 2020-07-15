@@ -482,10 +482,25 @@ template {
   margin-right: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .fix-menu {
+    display: none;
+    opacity: 0;
+  }
+}
+
 .fix-menu__list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.fix-menu-shadowed .fix-menu__link {
+  background-color: #000;
+}
+
+.fix-menu-shadowed .fix-menu__item--active, .fix-menu-shadowed .fix-menu__item:hover {
+  border: solid 1px #000;
 }
 
 .fix-menu__item {
@@ -494,7 +509,11 @@ template {
   margin-bottom: 0.27778rem;
 }
 
-.fix-menu__item.active {
+.fix-menu__item--active {
+  border: solid 1px #fff;
+}
+
+.fix-menu__item:hover {
   border: solid 1px #fff;
 }
 
@@ -504,11 +523,11 @@ template {
   width: 0.33333rem;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 2px 2px 2px #00000050;
   margin: 4px;
 }
 
 .hero {
+  width: 100%;
   background: url("../img/hero__bg.png");
   background-position: right bottom;
   background-repeat: no-repeat;
