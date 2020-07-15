@@ -1058,6 +1058,75 @@ template {
   line-height: 1.2;
 }
 
+.menu-section {
+  background: url("../img/menu__bg.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.products-menu__text {
+  transform: rotate(-90deg);
+  color: #fff;
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+.products-menu {
+  position: absolute;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.products-menu__item {
+  display: flex;
+}
+
+.products-menu__title {
+  position: relative;
+  width: 5.55556rem;
+  height: 100%;
+}
+
+.products-menu__bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #000;
+}
+
+.products-menu__content {
+  color: #fff;
+  background: rgba(45, 50, 52, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.7s;
+}
+
+.products-menu__container {
+  padding: 40px 73px 45px 26px;
+}
+
+.products-menu__close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.products-menu__close-icon {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  transition: .3s;
+}
+
 .reviews {
   position: relative;
 }
