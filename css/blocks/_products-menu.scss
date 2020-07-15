@@ -2,9 +2,13 @@
     background: url("../img/menu__bg.png") center center no-repeat;
     background-size: cover;
     position: relative;
+    background-color: rgba(45, 50, 52, 0.9);
 }
 .menu-section__title {
-
+    position: absolute;
+    top: 90px;
+    left: 54px;
+    color: #fff;
 }
 
 .products-menu__text{
@@ -12,7 +16,12 @@
     transform: rotate(-90deg);
     color: #fff;
     background-color: transparent;
-    font-size: 2rem ;
+    font-size: rem(48px) ;
+    position: absolute;
+    bottom: 224px;
+    right: -160px;
+    font-weight: bold;
+    white-space: nowrap;
 
 }
 
